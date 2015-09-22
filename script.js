@@ -8,5 +8,7 @@ function createCounter(button) {
 	return increment;
 }
 
-var button = document.querySelector('button');
-var addOne = createCounter(button);
+var buttons = document.querySelectorAll('button');
+for (var i = 0; i < buttons.length; i++) {
+	createCounter(buttons[i]);
+}
