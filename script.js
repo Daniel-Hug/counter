@@ -2,7 +2,7 @@ function createCounter(button) {
 	var count = 0;
 	function increment() {
 		count++;
-		console.log(count);
+		button.textContent = 'Clicked ' + count + ' times';
 	}
 	button.addEventListener('click', increment);
 	return increment;
